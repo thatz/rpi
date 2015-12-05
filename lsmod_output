@@ -1,0 +1,20 @@
+Module                  Size  Used by
+arc4                    1972  2 
+rt2800usb              18832  0 
+rt2800lib              81962  1 rt2800usb
+rt2x00usb              11918  1 rt2800usb
+rt2x00lib              47910  3 rt2x00usb,rt2800lib,rt2800usb
+mac80211              622304  3 rt2x00lib,rt2x00usb,rt2800lib
+cfg80211              499834  2 mac80211,rt2x00lib
+crc_ccitt               1620  1 rt2800lib
+rfkill                 22491  1 cfg80211
+bcm2835_gpiomem         3703  0 
+uio_pdrv_genirq         3690  0 
+uio                    10002  1 uio_pdrv_genirq
+i2c_dev                 6730  0 
+snd_bcm2835            22317  0 
+snd_pcm                92581  1 snd_bcm2835
+snd_timer              23454  1 snd_pcm
+snd                    68161  3 snd_bcm2835,snd_timer,snd_pcm
+fuse                   91981  1 
+ipv6                  360374  18 
